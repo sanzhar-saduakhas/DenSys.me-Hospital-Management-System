@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome page</title>
+</head>
+<style>
+        body {
+            background-color: #FAFAFA;
+        	font-family: "Trebuchet MS", Helvetica, sans-serif;
+            padding-top: 50px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+
+        .container{
+            max-width: 1200px;
+            margin: auto;
+            background-color: #fff;
+            -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+            box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+        }
+
+        .header-bar {
+            display: flex;
+            justify-content: space-between;
+            /* color: #fff; */
+            padding: 20px;
+            border-radius: 5px 5px 0 0;
+            background: linear-gradient(90deg, #EEA390 0%, #EB796F 50%, #EB796F 100%);
+        	font-family: Georgia, serif;
+       }
+
+		.header-hello {
+			border-radius: 5px;
+			margin-left: 5px;
+			padding: 5px 10px;
+		}
+
+        label{
+            padding-top: 10px !important;
+            display: block;
+        }
+
+        .header-bar a {
+            color: rgb(247, 247, 247);
+            text-decoration: none;
+        }
+ /*   .button {
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: #d65757;
+		border-radius: 10px;
+    }*/
+
+		.buttons {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			margin-left: 40px;
+			justify-content: space-between;
+			display: flex;
+			width: 1100px;
+		}
+
+        .button{
+            background-color: #FAFAFA;
+            color: #EB796F;
+            padding: 15px;
+        	font-family: "Trebuchet MS", Helvetica, sans-serif;
+       		font-size: 16px;
+			font-weight: 500;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+			border: 3px outset #a7554d
+        }
+
+        .card-body{
+            padding: 20px;
+        }
+
+		.text-container {
+			background-color: #ffff;
+			width: 1240px;
+			height: 50px;
+		}
+		.text-hello {
+			color:rgb(254, 78, 89);
+			font-weight: bold;
+			font-size: 38px;
+			display: flex;
+			justify-content: center;
+			text-decoration: none;
+       }
+		.background-image {
+			margin-left: 132px;
+		}
+    </style>
+<body>
+	<div class="container header-bar">
+		<div class = "buttons">
+			<a href="{% url 'admin:index' %}"><button class="button">Admin</button></a>
+			<a href="{% url 'hospitalapp:login' %}"><button class="button">Patient log in</button></a>
+			<a href="{% url 'hospitalapp:login' %}"><button class="button">Doctor log in</button></a>
+			<a href="{% url 'hospitalapp:appointment' %}"><button class="button">Make an Appointment</button></a>
+		</div>
+	</div>
+	<div class="background-image">
+		<div class="text-container"></div>
+		<div class="text-container">
+			<div class="text-hello">DenSys.me, You're Welcome</div>
+		</div>
+		<img src="https://lvivity.com/wp-content/uploads/2021/06/hospital-CRM.jpg" style="width:1240px">
+	</div>
+
+</body>
+</html>
