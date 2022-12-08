@@ -8,5 +8,5 @@ This is our hospital management system which we implemented in Django.
 - Make appointment
 - Doctor's and patient's details
 ## Admin info
-username: sanjey_01
-password: qweasdzxc123
+- username: sanjey_01
+- password: qweasdzxc123
